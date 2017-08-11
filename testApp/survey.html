@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="fragment" content="!">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>云平台</title>
+
+    <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_379281_9azll166ogp3c8fr.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+        .title{
+            font-size: 16px;
+        }
+
+        .cointer li{
+            padding:15px 10px 9px 15px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+        }
+        .title_span{
+            padding-left: 5px;
+        }
+        .tiem_div{
+            position: relative;
+            padding-left: 19px;
+            padding-bottom: 6px;
+            padding-top: 2px;
+            color: rgba(0, 0, 0, 0.85);
+        }
+        .tiem_div .icon-time{
+            color: #4BBF94;
+            position: absolute;
+            top: 4px;
+            left: -2px;
+        }
+        .tiem_div span{
+            font-size: 12px;
+        }
+        .tiem_div .sp{
+            padding: 0 6px;
+        }
+        .tiem_div .icon-jiantou{
+            font-size: 26px;
+            position: absolute;
+            right: 0;
+            top: -9px;
+        }
+        table{
+            width: 100%;
+            height: 100%;
+        }
+        table td{
+            width: 50%;
+            position: relative;
+            padding-left: 15px;
+            padding-bottom: 4px;
+            color: rgba(0, 0, 0, 0.89);
+        }
+        table td .iconfont{
+            position: absolute;
+            left: -4px;
+        }
+        .icon-zuidizhekou{
+            top: 1px;
+        }
+        .icon-suo{
+            top: 2px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+        .icon-huilv01{
+            top: 2px;
+        }
+        .icon-huilv01,.icon-meiyuan{
+            color: rgba(0, 0, 0, 0.8);
+        }
+        .money{
+            padding:0 9px;
+            color: #00BCD4;
+        }
+        .search_div{
+            width: 100%;
+            height: 43px;
+            padding: 7px 10px;
+            background: #EBEDED;
+            position: absolute;
+            top: 40px;
+            z-index: 5;
+        }
+        .search_div input{
+            background-color: #fff;
+            width: 100%;
+            border-radius: 5px;
+            padding:0 10px; 
+            height: 100%;
+            border: none;
+        }
+        .input_div{
+            width: 100%;
+            height: 100%;
+        }
+        .cancel{
+            width: 40px;
+            text-align: center;
+            float: right;
+            margin-left: -40px;
+            display: none;
+            height: 29px;
+            line-height: 29px;
+            color: #99C3E8;
+        }
+        .search_div.show .input_div{
+            padding-right: 50px;
+        }
+        .search_div.show .cancel{
+            display: block;
+        }
+        .main_cointer {
+            padding-top: 83px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <i class="iconfont icon-arrow-right-copy"></i>
+        <span>项目概况</span>
+    </header>
+    <div class="search_div">
+        <div class="cancel" id="cancelBtn">取消</div>
+        <div class="input_div">
+            <input type="text" id="searchInput" placeholder="请输入搜索内容">
+        </div>
+    </div>
+    <div class="main_cointer">
+        <ul class="cointer">
+            <li>
+                <div>
+                    <p class="title">
+                        <i class="iconfont icon-pc"></i>
+                        <span class="title_span">演示项目007</span>
+                    </p>
+                    <p class="tiem_div">
+                        <i class="iconfont icon-time"></i>
+                        <span>2017-08-23</span>
+                        <span class="sp">~</span>
+                        <span>2017-15-31</span>
+                        <i class="iconfont icon-jiantou"></i>
+                    </p>
+                    <table>
+                        <tr>
+                            <td>
+                                <div>
+                                    <i class="iconfont icon-meiyuan"></i>
+                                    贷款金额<span class="money">122</span>万
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <i class="iconfont icon-suo"></i>
+                                    库存金额<span class="money">122</span>万
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <i class="iconfont icon-zuidizhekou"></i>
+                                    最低库存<span class="money">122</span>万
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <i class="iconfont icon-huilv01"></i>
+                                    之提率<span class="money">12</span>%
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <div>
+            <ul>
+                <li class="active">
+                    <div class="icon">
+                        <i class="iconfont icon-shouye"></i>
+                    </div>
+                    <p>首页</p>
+                </li>
+                <li>
+                    <div class="icon">
+                        <i class="iconfont icon-chaxun"></i>
+                    </div>
+                    <p>首页</p>
+                </li>
+                <li>
+                    <div class="icon">
+                        <i class="iconfont icon-chaxun"></i>
+                    </div>
+                    <p>首页</p>
+                </li>
+                <li>
+                    <div class="icon">
+                        <i class="iconfont icon-chaxun"></i>
+                    </div>
+                    <p>首页</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $('#searchInput').focus(function(){
+            $(".search_div").addClass('show');
+        }).keydown(function() {
+             if (event.keyCode == "13") {//keyCode=13是回车键
+                 alert(1);
+             }
+        });
+        $('#cancelBtn').click(function(){
+            $('#searchInput').val('');
+            $(".search_div").removeClass('show');
+        })
+    </script>
+</body>
+</html>

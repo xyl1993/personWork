@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="fragment" content="!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>云平台</title>
+
+    <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_by5tgu73w990ms4i.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+        .login_title{
+            height: 58px;
+            background: #F6F6F6;
+            position: absolute;
+            width: 100%;
+        }
+        .s_code{
+            text-align: right;
+            color: #5CA5E7;
+            font-weight: 700;
+            padding-right: 20px;
+            padding-top: 5px;
+        }
+        .icon-richscan_icon{
+            color: #03A9F4;
+        }
+        .login_main{
+            padding-top: 58px;
+            width: 100%;
+            height: 100%;
+            padding-left: 24px;
+            padding-right: 24px;
+            background: #EDEDED;
+        }
+        .checkbox-lab{
+            position: absolute;
+            top: 14px;
+            right: 0;
+        }
+        .lo_logo{
+            height: 100px;
+        }
+        .login_cointer{
+            position: relative;
+            height: 90px;
+            width: 100%;
+        }
+        .pc_lo{
+            width: 90px;
+            height: 90px;
+            border-radius: 6px;
+            background: #fff;
+            color: #5CA5E7;
+            position: absolute;
+            text-align: center;
+            box-shadow: 0px 0 0 #DCDCDC, 0 0px 0 #DCDCDC, inset 0 -2px 0 #DCDCDC, 1px 0 0 #DCDCDC;
+        }
+        .icon-pc{
+            font-size: 68px;
+        }
+        .input_div{
+            padding-left: 96px;
+        }
+        .input_div input{
+            height: 43px;
+            width: 100%;
+            padding-left: 5px;
+            border: 1px solid #E5E5E5;
+            border-radius: 6px;
+        }
+        .input_div input:focus{
+            border: 1px solid #892E35;
+            background: #F2B8B7;
+        }
+        .input_div input:first-of-type{
+            margin-bottom: 2px;
+        }
+        a.btn{
+            display: inline-block;
+            color: #fff;
+            width: 100%;
+            background: #009AFE;
+            padding: 12px;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        .lab_div{
+            position: relative;
+            height: 30px;
+            padding-left:22px;
+            line-height: 30px;
+        }
+        .checkbox-lab{
+            top: -2px;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="login_title">
+    <p class="s_code">
+        <i class="iconfont icon-richscan_icon"></i>
+        扫码配置
+    </p>
+</div>
+<div class="login_main">
+    <div class="lo_logo">
+
+    </div>
+    <div class="login_cointer">
+        <div class="pc_lo">
+            <i class="iconfont icon-pc"></i>
+        </div>
+        <div class="input_div">
+            <input type="text" placeholder="手机号">
+            <input type="password" placeholder="密码">
+        </div>
+    </div>
+    <a href="javascript:;" class="btn">
+        登&nbsp;&nbsp;&nbsp;&nbsp;录
+    </a>
+    <div class="lab_div">
+        <label class="middle checkbox-lab">
+            <input class="ace" type="checkbox" >
+            <span class="lbl"></span>
+        </label>
+        记住密码
+    </div>
+</div>
+</body>
+</html>

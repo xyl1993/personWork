@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="fragment" content="!">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>云平台</title>
+
+    <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_by5tgu73w990ms4i.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+        body{
+            background-color: #efeff4;
+        }
+        form{
+            font-size: 17px;
+        }
+        .form_title{
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            background: #F6F6F6;
+        }
+        .form_group{
+            padding: 11px 15px;
+            background: #fff;
+            border-bottom: 1px solid #E4E3E6;
+        }
+        .form_group label{
+            float: left;
+            width: 44px;
+            margin-right: -44px;
+        }
+        .input_dyn{
+            float: left;
+            width: 100%;
+            padding-left: 44px;
+        }
+        .form_group input{
+            border: none;
+            width: 100%;
+            height: 24px;
+            font-size: 17px;
+            padding:0 10px;
+            line-height: 27px;
+        }
+        .form_cointer{
+            width: 100%;
+        }
+        .form_head{
+            background: #fff;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 15px;
+            font-weight: 700;
+            color: rgba(33, 150, 243, 0.82);
+        }
+        .form-border {
+            height: 10px;
+            width: 100%;
+            background-color: #EFEFF4;
+        }
+        textarea{
+            width: 100%;
+            border: none;
+            padding: 11px 15px;
+            font-size: 16px;
+        }
+        a.btn{
+            display: inline-block;
+            color: #fff;
+            width: 100%;
+            background: #009AFE;
+            padding: 12px;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        .bit_div{
+            padding: 30px 15px;
+        }
+    </style>
+</head>
+<body>
+    <p class="form_title">周总结</p>
+    <form>
+        <div class="form_group clearflx">
+            <div class="form_cointer">
+                <label>标题:</label>
+                <div class="input_dyn">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="form-border"></div>
+        <div class="form_head">
+              本周工作情况
+        </div>
+        <div class="form-border"></div>
+        <textarea rows="6" placeholder="本周工作情况"></textarea>
+        <div class="form-border"></div>
+        <div class="form_head">
+              未解决事项
+        </div>
+        <div class="form-border"></div>
+        <textarea rows="6" placeholder="未解决事项"></textarea>
+        <div class="form-border"></div>
+        <div class="form_head">
+              下周工作安排
+        </div>
+        <div class="form-border"></div>
+        <textarea rows="6" placeholder="下周工作安排"></textarea>
+        <div class="bit_div">
+            <a href="javascript:;" class="btn">
+                提&nbsp;&nbsp;&nbsp;&nbsp;交
+            </a>
+        </div>
+    </form>
+    <script src="./js/util.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        var dom = $('textarea');
+        for(var i=0,len=dom.length;i<len;i++){
+            autoTextarea(dom[i],0,243);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+*
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+:after,
+:before
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body
+{
+    font-family: '华文细黑', 'STHeiti', '微软雅黑', 'Microsoft YaHei', SimHei, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-size: 14px;
+}
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+}
+.middle
+{
+    vertical-align: middle;
+}
+input,
+textarea
+{
+    background: #fff none repeat scroll 0 0;
+}
+a,
+button,
+input,
+select,
+textarea
+{
+    outline: none;
+}
+textarea{
+    resize: none;
+}
+ul,
+li
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var,
+i
+{
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clearflx:after
+{
+    display: table;
+    clear: both;
+
+    content: '';
+}
+.text-overflow
+{
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.pointer
+{
+    cursor: pointer;
+}
+.text-center
+{
+    text-align: center;
+}
+
+.float-left
+{
+    float: left;
+}
+
+.float-right
+{
+    float: right;
+}
+.align-items-center
+{
+    display: flex;
+
+    align-items: center;
+}
+input[type=checkbox].ace,
+input[type=radio].ace
+{
+    position: absolute;
+    z-index: 12;
+    top: 7px;
+
+    width: 18px;
+    height: 18px;
+
+    cursor: pointer;
+
+    opacity: 0;
+}
+input[type=checkbox].ace + .lbl,
+input[type=checkbox].ace + .rbl,
+input[type=radio].ace + .lbl,
+input[type=radio].ace + .rbl
+{
+    font-weight: 400;
+    line-height: 20px;
+
+    position: relative;
+    z-index: 11;
+
+    display: inline-block;
+
+    min-width: 18px;
+    min-height: 18px;
+    margin: 0;
+}
+input[type=checkbox].ace + .lbl:before,
+input[type=checkbox].ace + .rbl:before
+{
+    border-radius: 0;
+}
+input[type=checkbox].ace + .lbl:before,
+input[type=radio].ace + .lbl:before,
+input[type=radio].ace + .rbl:before
+{
+    font-family: iconfont;
+    font-size: 12px;
+    font-weight: 400;
+
+    display: inline-block;
+
+    min-width: 16px;
+    height: 16px;
+    margin-right: 1px;
+
+    content: '\A0';
+    text-align: center;
+    vertical-align: middle;
+
+    color: #fff;
+    background-color: #dedede;
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+input[type=checkbox].ace:checked + .lbl:before,
+input[type=radio].ace:checked + .lbl:before
+{
+    display: inline-block;
+
+    content: '\e6b8';
+
+    border-color: #dedede;
+}
+.footer
+{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+
+    background: #fff;
+}
+
+.footer li
+{
+    font-size: 12px;
+
+    float: left;
+
+    width: 25%;
+
+    text-align: center;
+
+    color: rgba(0, 0, 0, .76);
+}
+.footer li.active,
+.footer li.active .icon
+{
+    color: #0ca8fc;
+}
+.footer li .icon
+{
+    margin: 5px 0;
+
+    text-align: center;
+
+    color: rgba(0, 0, 0, .32);
+}
+.footer li .icon i
+{
+    font-size: 26px;
+}
+header
+{
+    line-height: 40px;
+
+    position: absolute;
+    z-index: 5;
+
+    width: 100%;
+    height: 40px;
+
+    text-align: center;
+
+    color: rgba(255, 255, 255, .92);
+    background: #01a9f2;
+}
+header .icon-arrow-right-copy
+{
+    font-size: 24px;
+
+    position: absolute;
+    left: 4px;
+}
+header span
+{
+    font-size: 16px;
+}
+.main_cointer{
+    padding-bottom: 54px;
+    overflow: auto;
+    height: 100%;
+    padding-top: 40px;
+}
