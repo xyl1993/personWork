@@ -15,7 +15,7 @@
             background-color: #efeff4;
         }
         form{
-            font-size: 17px;
+            font-size: 14px;
             padding-top: 40px;
             overflow: auto;
             height: 100%;
@@ -52,8 +52,6 @@
             border: none;
             width: 100%;
             height: 24px;
-            font-size: 17px;
-            padding:0 10px;
             line-height: 27px;
         }
         .form_cointer{
@@ -80,8 +78,9 @@
         textarea{
             width: 100%;
             border: none;
-            padding: 11px 15px;
+            padding: 0;
             font-size: 16px;
+            height:auto;
         }
         a.btn{
             display: inline-block;
@@ -96,41 +95,27 @@
         .bit_div{
             padding: 30px 15px;
         }
-        .union_select{
-            width:100%;
-            position:relative;
-            display:none;
-        }
-        .union_select ul{
-            width:100%;
-            position:absolute;
-            background: #fff;
-    		border: 1px solid #E4E3E6;
-    		top:3px;
-    		max-height:256px;
-    		overflow-y:auto;
-        }
-        .union_select ul li{
-       	    padding: 5px 12px;
-       	    border-bottom:1px solid rgba(51, 51, 51, 0.06);
-        }
-        .union_select ul li:last-of-type{
-            border-bottom:none;
-        }
+        .detail_div{
+            border: none;
+		    width: 100%;
+		    min-height: 24px;
+		    word-wrap:break-word;
+	    }
     </style>
 </head>
 <body>
     <header>
         <i class="iconfont icon-arrow-right-copy"></i>
-        <span>周总结</span>
-        <span class="header_submit">提交</span>
+        <span>详情</span>
     </header>
     <form>
         <div class="form_group clearflx">
             <div class="form_cointer">
-                <label>标题:</label>
+                <label>名称:</label>
                 <div class="input_dyn">
-                    <input type="text" id="text1">
+                    <div class="detail_div">
+                        sssssss
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,70 +123,37 @@
             <div class="form_cointer">
                 <label>项目:</label>
                 <div class="input_dyn">
-                	<select id="cbType">
-                	    <option value="1">1</option>
-                	    <option value="2">2</option>
-                	    <option value="3">3</option>
-                	</select>
-                    <!-- <input type="text" id="workId" readonly>
-                    <i class="iconfont icon-xiala"></i>
-                    <div class="union_select" id="unionSelect">
-                        <ul>
-                            <li data-id=1 data-text="项目1">
-                                项目1
-                            </li>
-                            <li data-id=2 data-text="项目2">
-                                项目2
-                            </li>
-                        </ul>
-                    </div> -->
+                    <div class="detail_div">
+                        ssss
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="form-border"></div>
-        <div class="form_head">
-              本周工作情况
+        <div class="form_group clearflx">
+            <div class="form_cointer">
+                <label>贷款:</label>
+                <div class="input_dyn">
+                    <div class="detail_div">
+                        ssssssss
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form_title_border"></div>
-        <textarea rows="6" placeholder="本周工作情况"></textarea>
-        <div class="form-border"></div>
-        <div class="form_head">
-              未解决事项
-        </div>
-        <div class="form_title_border"></div>
-        <textarea rows="6" placeholder="未解决事项"></textarea>
-        <div class="form-border"></div>
-        <div class="form_head">
-              下周工作安排
-        </div>
-        <div class="form_title_border"></div>
-        <textarea rows="6" readonly placeholder="下周工作安排"></textarea>
-        <div class="bit_div">
-         <!--    <a href="javascript:;" class="btn">
-                提&nbsp;&nbsp;&nbsp;&nbsp;交
-            </a> -->
+        <div class="form_group clearflx">
+            <div class="form_cointer">
+                <label>备注:</label>
+                <div class="input_dyn">
+                    <div class="detail_div">
+                        ssssssssssssssssssssssssssssssssssss
+                        ssssssssssssssssssssssssssssssss
+                        ssssssssssssssssssssssssssssssssssss
+                        ssssssssssssssssssssssssssssssss
+                    </div>
+                </div>
+            </div>
         </div>
     </form>
     <script src="./js/util.js"></script>
     <script src="./js/jquery.min.js"></script>
-    <script>
-        var dom = $('textarea');
-        for(var i=0,len=dom.length;i<len;i++){
-            autoTextarea(dom[i],0,243);
-        }
-        var unionSelect = $('#unionSelect');
-        $('#workId').click(function(){
-        	if(unionSelect.css("display")=="none"){ 
-        		unionSelect.css("display","block"); 
-       		} 
-       		else{ 
-       			unionSelect.css("display","none"); 
-       		} 
-        }); 
-        $('#unionSelect').find('li').on('click',function(){
-        	$('#workId').val($(this).data('text'));
-        	unionSelect.css("display","none"); 
-        })
-    </script>
 </body>
 </html>
