@@ -9,19 +9,35 @@
 <title>云平台</title>
 
 <link rel="stylesheet" type="text/css"
-	href="https://at.alicdn.com/t/font_by5tgu73w990ms4i.css">
+	href="https://at.alicdn.com/t/font_379281_kv1382zpg8kw3ik9.css">
 <link rel="stylesheet" href="./css/common.css">
 <style>
+main{
+	font-size: 14px;
+    padding-top: 40px;
+    overflow: auto;
+    height: 100%;
+    padding-bottom:48px;
+}
 .replay_div {
 	width: 100%;
 	height: auto;
 	min-height: 42px;
-	padding: 5px 5px;
+    padding: 7px 10px 5px 10px;
 	position: relative;
 	background: #F5F5F5;
-	padding-right: 75px;
 }
-
+.replay_div:after{
+	clear:both;
+	content: '';
+	display: table;
+}
+.txt_round{
+	float: right;
+	width:100%;
+	padding-right: 75px;
+	line-height: 0px;
+}
 .replay_div textarea {
 	width: 100%;
 	border: none;
@@ -34,11 +50,14 @@
 	width: 60px;
 	height: 36px;
 	line-height: 36px;
-	position: absolute;
-	top: 5px;
-	right: 5px;
-	border: 1px solid #EDEDED;
+	border: 1px solid #b3b3b3;
 	text-align: center;
+	float:right;
+    margin-left: -60px;
+    z-index: 5;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
 }
 
 .fixed_bottom {
@@ -49,7 +68,7 @@
 
 .list_info_main {
 	position: relative;
-	padding: 10px 10px 12px;
+	padding: 10px 5px 10px;
 	border: 1px solid #ebeced;
 	background-color: #fff;
 	-webkit-border-radius: 5px;
@@ -101,9 +120,8 @@
 }
 
 .sender_content {
-	margin-bottom: 17px;
 	width: 100%;
-	border-bottom: 1px solid #f3f3f3;
+	/*border-bottom: 1px solid #f3f3f3;*/
 }
 
 .content_text {
@@ -113,15 +131,13 @@
 }
 
 .sender_image_div {
-	margin-top: 8px;
 	width:100%;
 	padding-left: 0;
 }
 
 .media_wrap {
-	float: left;
-	font-size: 0;
 	width:100%;
+    padding-left: 5px;
 }
 
 .sender_image_div:after {
@@ -131,44 +147,48 @@
 }
 
 .media_a_mn.smill {
-	width: 378px;
+	width: 100%;
 }
 
-.media_a_mn {
-	margin: -4px 0 0 -4px;
+.media_a_mn:after{
+	clear:both;
+	content: '';
+	display: table;
 }
-
 .media_a_mn li {
 	float: left;
-	margin: 6px 0 0 6px;
-	width: 24.3333%;
-	height: 94px;
+	width: 33.3333%;
+	height: 109px;
 }
-
-.media_a_mn li img {
+.media_a_mn li div{
+	padding: 0 5px 5px 0;
+}
+.media_a_mn li img,.media_a_mn li div {
 	width: 100%;
 	height: 100%;
 }
 
 .replay_contnet{
 	background:#EEEEEE;
+	padding:5px 0;
 }
 .portrait{
     width:46px;
     height:46px;
     position:absolute;
     left:10px;
-    top:10px;
+    top:5px;
 }
 .replay_contnet li{
-    padding: 5px 0 7px;
+    padding: 5px 10px 0px 10px;
     padding-left: 10px;
     position:relative;
     
 }
 .replay_contnet li.inimg-li{
-	min-height:66px;
-	padding-left:65px;
+    padding-left: 65px;
+    padding-right: 10px;
+    padding-top: 5px;
 }
 .replay_contnet li .time{
     float:right;
@@ -188,83 +208,105 @@
     padding-left:4px;
 }
 .replay_text{
-    padding-right:12px;
     overflow: hidden;
     line-height: 23px;
     word-wrap: break-word;
 }
+p.tit{
+}
 </style>
 </head>
 <body>
-	<div class="connections_list_div ">
-		<div class="list_info_main">
-			<!-- <div class="sender_info">
-				<img
-					src="http://www.yunzhujia.cn/upload/images/UdzUEyC2jrdzPKe186k6szDeJHs=.jpg">
-				<div class="sender_info_text">
-					<p>
-						<span class="send_user_name">〆 ﹏浅时光。</span> <em
-							class="lab ng-binding">土木工程建筑</em>
-					</p>
-					<p>
-						<span class="company_name">HitachiChemical</span>
-					</p>
-				</div>
-			</div> -->
-			<div class="sender_content">
-				<!-- <div class="content_text">分享图片
-					通关转手卖了,现在又想玩了.经典没有之一</div> -->
-				<div class="sender_image_div">
-					<div class="media_wrap">
-						<!--定宽度,9张图片378px-->
-						<ul class="media_a_mn smill">
-							<li class="bigcursor"><img
-								src="http://www.yunzhujia.cn/upload/files/150182906645719d654fbb2fb43160e74e71428a4462308f7d3b4.jpg">
-							</li>
-							<li class="bigcursor"><img
-								src="http://www.yunzhujia.cn/upload/files/150182906645719d654fbb2fb43160e74e71428a4462308f7d3b4.jpg">
-							</li>
-							<li class="bigcursor"><img
-								src="http://www.yunzhujia.cn/upload/files/150182906645719d654fbb2fb43160e74e71428a4462308f7d3b4.jpg">
-							</li>
-							<li class="bigcursor"><img
-								src="http://www.yunzhujia.cn/upload/files/150182906645719d654fbb2fb43160e74e71428a4462308f7d3b4.jpg">
-							</li>
-						</ul>
+	<header>
+        <i class="iconfont icon-arrow-right-copy"></i>
+        <span>详情</span>
+    </header>
+    <main>
+    	<div class="connections_list_div ">
+			<div class="list_info_main">
+				<div class="sender_content">
+					<div class="sender_image_div">
+						<div class="media_wrap">
+							<!--定宽度,9张图片378px-->
+							<ul class="media_a_mn smill">
+								<li class="bigcursor">
+									<div>
+										<img
+									src="http://www.yunzhujia.cn/upload/files/150182906645719d654fbb2fb43160e74e71428a4462308f7d3b4.jpg">
+									</div>
+								</li>
+								<li class="bigcursor"><div>
+										<img
+									src="http://www.yunzhujia.cn/upload/files/150182906645719d654fbb2fb43160e74e71428a4462308f7d3b4.jpg">
+									</div>
+								</li>
+								<li class="bigcursor"><div>
+										<img
+									src="http://www.yunzhujia.cn/upload/files/150182906645719d654fbb2fb43160e74e71428a4462308f7d3b4.jpg">
+									</div>
+								</li>
+								<li class="bigcursor"><div>
+										<img
+									src="http://www.yunzhujia.cn/upload/files/150182906645719d654fbb2fb43160e74e71428a4462308f7d3b4.jpg">
+									</div>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
+			<div class="replay_contnet">
+			    <ul>
+			        <li class="inimg-li">
+			             <img class="portrait" src="http://www.yunzhujia.cn/upload/files/150182906645719d654fbb2fb43160e74e71428a4462308f7d3b4.jpg">
+			             <div class="replay_list_domin">
+			                 <p class="tit">
+			                     <span class="name">张三</span>
+			                     <span class="time">2013-9-9</span>
+			                 </p>
+			                 <p class="content">
+			                     1234
+			                 </p>
+			             </div>
+			        </li>
+			        <li>
+			             <div class="replay_text ">
+			                 <a class="replay_name">
+			                    湘湘湘子i:
+			                 </a>
+			                 <span>的似的发射的似的发射点发生的似的发射点发生点发生</span>
+			             </div>
+			        </li>
+			        <li>
+			             <div class="replay_text ">
+			                 <a class="replay_name">
+			                    湘湘湘子i
+			                 </a>
+			                 回复
+			                 <a class="replay_name">
+			                    湘湘湘子i:
+			                 </a>
+			                 <span>的似的发射的似的发射点发生的似的发射点发生点发生</span>
+			             </div>
+			        </li>
+			    </ul>
+			</div>
 		</div>
-		<div class="replay_contnet">
-		    <ul>
-		        <li class="inimg-li">
-		             <img class="portrait" src="http://www.yunzhujia.cn/upload/files/150182906645719d654fbb2fb43160e74e71428a4462308f7d3b4.jpg">
-		             <div class="replay_list_domin">
-		                 <p class="tit">
-		                     <span class="name">张三</span>
-		                     <span class="time">2013-9-9</span>
-		                 </p>
-		                 <p class="content">
-		                     1234
-		                 </p>
-		             </div>
-		        </li>
-		        <li>
-		             <div class="replay_text ">
-		                 <a class="replay_name">
-		                    湘湘湘子i
-		                 </a>:sdfsdf
-		             </div>
-		        </li>
-		    </ul>
-		</div>
-	</div>
+    </main>
+	
 
 	<div class="fixed_bottom">
 		<div class="replay_div">
 			<div class="send_btn">发送</div>
-			<textarea></textarea>
+			<div class="txt_round">
+				<textarea id="sendContent"></textarea>
+			</div>
 		</div>
 	</div>
 </body>
+    <script src="./js/util.js"></script>
+    <script src="./js/jquery.min.js"></script>
+	<script type="text/javascript">
+        autoTextarea($('#sendContent')[0],0,243);
+	</script>
 </html>
